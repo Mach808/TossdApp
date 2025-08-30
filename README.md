@@ -88,7 +88,7 @@ The app will be available at http://localhost:3000.
 
 ### Live Demo
 You can try out the deployed version here:  
-👉 [Coin Toss DApp Demo]([[https://tossd-app.vercel.app/]])
+👉 [Coin Toss DApp Demo](https://tossd-app.vercel.app/)
 
 ### Screenshots
 #### 1. Home Page  

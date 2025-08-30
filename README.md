@@ -1,12 +1,40 @@
-# React + Vite
+# 🎲 Coin Toss Betting DApp  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A decentralized **Heads or Tails** game built on Ethereum.  
+Players can bet ETH on a coin toss, and if they win, they receive **double their bet** instantly.  
 
-Currently, two official plugins are available:
+This project demonstrates the use of **Solidity smart contracts**, **React frontend**, and **Web3.js** integration with MetaMask.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features  
+- 🔗 **MetaMask Integration** – Connect wallet and play directly from browser.  
+- 💰 **Bet & Win** – Double your ETH if your guess is correct.  
+- 🔒 **Secure Smart Contract** – Handles bets and payouts safely.  
+- 👨‍💼 **Owner Controls**  
+  - Fund the contract.  
+  - Withdraw specific amounts or drain all funds.  
+- 🎨 **Frontend (React + Tailwind CSS)**  
+  - Smooth coin flip animation.  
+  - Real-time bet results.  
+- ⚠️ **Safe Bets** – Players cannot bet more than the contract can cover (checked in frontend).  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack  
+- **Frontend:** React, Tailwind CSS, Web3.js  
+- **Smart Contract:** Solidity (v0.8.28), Remix/Hardhat  
+- **Blockchain:** Ethereum Testnet (Sepolia / Holesky / Hardhat Localhost)  
+
+---
+
+## 📂 Project Structure  
+
+```bash
+/src
+├── components
+│ ├── Wallet.jsx # Connects MetaMask, saves contract state
+│ └── Game.jsx # Main coin toss betting game
+├── ABI.json # Compiled contract ABI
+└── App.jsx # Main entry point
+```
